@@ -13,6 +13,11 @@ def curso(self):
 #def inicio(request):
 #    return HttpResponse("Esta es la pagina de inicio")
 
+#vamos acambiar inicio
+def inicio(request):
+    return render(request,"AppCoder/inicio.html")
+
+# Creamos paginas para cada clase que utilizamos: profesores, estudiants, cursos, entregables 
 def profesores(request):
     return HttpResponse("Esta es la pagina de profesores")
 
@@ -25,6 +30,3 @@ def cursos(request):
 def entregables(request):
     return HttpResponse("Esta es la pagina de entregables")
 
-#vamos acambiar inicio
-def inicio(request):
-    return render(request,"AppCoder/inicio.html")
