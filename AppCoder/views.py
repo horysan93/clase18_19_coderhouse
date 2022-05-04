@@ -8,3 +8,23 @@ def curso(self):
     curso.save()
     texto=f"---->Curso:  {curso.nombre} comisión: {curso.comision}"
     return HttpResponse(texto)
+
+# Creamos paginas de cada una de los modelos
+#def inicio(request):
+#    return HttpResponse("Esta es la pagina de inicio")
+
+def profesores(request):
+    return HttpResponse("Esta es la pagina de profesores")
+
+def estudiantes(request):
+    return HttpResponse("Esta es la pagina de estudiantes")
+
+def cursos(request):
+    return HttpResponse("Esta es la pagina de cursos")
+
+def entregables(request):
+    return HttpResponse("Esta es la pagina de entregables")
+
+#vamos acambiar inicio
+def inicio(request):
+    return render(request,"AppCoder/inicio.html")
